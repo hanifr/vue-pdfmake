@@ -1,5 +1,11 @@
 <template>
   <v-container class="hello" ref="capture">
+    <div class="text-right">
+    <v-btn 
+    elevation="2"
+    color="primary" 
+    @click="downloadHelloWorld">Download Page</v-btn>
+    </div>
     <h1>{{ msg }}</h1>
     <v-row class="text-center">
       <v-col cols="12">
@@ -89,12 +95,6 @@
         </v-row>
       </v-col>
     </v-row>
-    <div class="text-center">
-    <v-btn 
-    elevation="2"
-    color="primary" 
-    @click="downloadHelloWorld">Print HelloWorld</v-btn>
-    </div>
   </v-container>
 </template>
 
